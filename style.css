@@ -1,0 +1,155 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-color: #13131c;
+}
+.card {
+  height: 90vh;
+  width: 100%;
+  background-color: #1a1837;
+  border-radius: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.photoArea {
+  min-height: 35%;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(122, 30, 122, 0.658),
+      rgba(128, 0, 128, 0.603)
+    ),
+    url(./image-header-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 7px 7px 0px 0px;
+}
+.textArea {
+  min-height: 65%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: lightblue; */
+}
+.textArea h3 {
+  color: white;
+  width: 70%;
+  font-size: 1.5rem;
+}
+.textArea p {
+  color: white;
+  width: 75%;
+  font-size: 0.8rem;
+  position: relative;
+  /* background-color: tomato; */
+}
+.down {
+  /* background-color: teal; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  width: 100%;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.down div {
+  width: 15%;
+  /* text-align: center; */
+}
+.down p {
+  /* text-align: center; */
+  color: white;
+  font-size: 0.6rem;
+}
+.down span {
+  font-size: 1rem;
+}
+@media (min-width: 815px) {
+  .card {
+    height: 50%;
+    width: 65%;
+    background-color: #1a1837;
+    border-radius: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .photoArea {
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(
+        rgba(122, 30, 122, 0.658),
+        rgba(128, 0, 128, 0.603)
+      ),
+      url(./image-header-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 7px 0px 0px;
+  }
+  .textArea {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+
+    /* background-color: lightblue; */
+  }
+  .textArea h3 {
+    color: white;
+    width: 70%;
+    font-size: 2rem;
+    text-align: justify;
+    padding-left: 20px;
+  }
+  .textArea p {
+    color: white;
+    width: 65%;
+    font-size: 0.9rem;
+    position: relative;
+    text-align: justify;
+    /* background-color: tomato; */
+  }
+  .down {
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 90%;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .down div {
+    width: 15%;
+    /* text-align: center; */
+  }
+  .down p {
+    /* text-align: center; */
+    color: white;
+    font-size: 0.5rem;
+    line-height: 15px;
+  }
+  .down span {
+    font-size: 1.5rem;
+  }
+}
